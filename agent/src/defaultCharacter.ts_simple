@@ -5,8 +5,8 @@ export const defaultCharacter: Character = {
     name: "Eliza",
     username: "eliza",
     plugins: [nearPlugin],
-    // modelProvider: ModelProviderName.NEARAI,
-    modelProvider: ModelProviderName.DEEPSEEK,
+    modelProvider: ModelProviderName.NEARAI,
+    // modelProvider: ModelProviderName.DEEPSEEK,
     settings: {
         secrets: {},
         voice: {

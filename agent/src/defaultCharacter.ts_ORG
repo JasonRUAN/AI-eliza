@@ -1,10 +1,12 @@
 import { type Character, ModelProviderName } from "@elizaos/core";
+import { nearPlugin } from "@elizaos/plugin-near";
 
 export const defaultCharacter: Character = {
     name: "Eliza",
     username: "eliza",
-    plugins: [],
-    modelProvider: ModelProviderName.LLAMALOCAL,
+    plugins: [nearPlugin],
+    // modelProvider: ModelProviderName.LLAMALOCAL,
+    modelProvider: ModelProviderName.NEARAI,
     settings: {
         secrets: {},
         voice: {
